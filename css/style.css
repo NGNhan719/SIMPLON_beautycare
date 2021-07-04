@@ -1,0 +1,499 @@
+/*
+Name: SIMPLON Beauty Care
+
+*/
+
+/* General Style */
+
+body{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background: #f0f0f0;
+    overflow-x: hidden;
+}
+
+#content .product a img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 250px;
+}
+
+/* Top */
+
+#top{
+    background: #555555;
+    padding: 10px 0;
+}
+
+#top .offer{
+    color: #ffffff;
+}
+
+#top .offer .btn{
+    text-transform: uppercase;
+}
+
+@media(max-width: 991px){
+    #top .offer{
+        margin-bottom: 10px;
+    }
+}
+
+@media(max-width: 991px){
+    #top{
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+#top a{
+    color: #ffffff;
+}
+
+#top ul.menu{
+    padding-top: 5px;
+    margin: 0px;
+    text-align: right;
+    font-size: 12px;
+    list-style: none;
+}
+
+@media (max-width: 991px){
+    #top ul.menu{
+        text-align: center;
+    }
+}
+
+#top ul.menu > li{
+    display: inline-block;
+}
+
+#top ul.menu > li a{
+    color: #eeeeee;
+}
+
+#top ul.menu > li + li:before{
+    content: "\00a0";
+    color: #f7f7f7;
+    padding: 0px;
+}
+
+.header-top {
+    padding: 18px 0 14px;
+}
+
+
+.site-logo{
+    display: inline-block;
+}
+
+
+/* Header */
+.header-search-form{
+    width: 100%;
+    position: relative;
+    padding: 20px 10px;
+}
+
+.header-search-form input{
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    border-radius: 50px;
+    border: solid grey;
+    padding: 0 19px;
+    background: #f0f0f0;
+}
+
+.header-search-form button{
+    position: absolute;
+    height: 45%;
+    right: 18px;
+    top: 22px;
+    font-size: 26px;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.btn-white{
+    border-radius: 15px 50px 30px 15px;
+    border: solid white;
+}
+
+.shopping-cart{
+    top: 22px;
+    right: -60px;
+}
+
+.btn-primary{
+    color: rgb(255, 255, 255);
+    background: rgb(79, 191, 168);
+    border-color: rgb(65, 179, 156);
+}
+
+
+
+.main-navbar{
+    background: #282828;	
+}
+
+
+.main-menu{
+    list-style: none;
+}
+
+.main-menu li{
+    display: inline-block;
+    position: relative;
+}
+
+
+.main-menu li a{
+    display: inline-block;
+    font-size: 16px;
+    color: #ffffff;
+    margin-right: 50px;
+    line-height: 1;
+    padding: 17px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.main-menu li a .new{
+    position: absolute;
+    top: -8px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #fff;
+    background: #f51167;
+    line-height: 1;
+    text-transform: uppercase;
+    left: calc(50% - 21px);
+    padding: 5px 9px 1px;
+    border-radius: 15px;
+    width: 42px;
+}
+
+.main-menu li:hover .sub-menu{
+    visibility: visible;
+    opacity: 1;
+    margin-top: 0;
+}
+
+.main-menu li:hover>a{
+    color: #f51167;
+}
+
+.main-menu .sub-menu{
+    position: absolute;
+    list-style: none;
+    width: 220px;
+    left: 0;
+    top: 100%;
+    padding: 20px 0;
+    visibility: hidden;
+    opacity: 0;
+    margin-top: 50px;
+    background: #fff;
+    z-index: 99;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    -webkit-box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 2px 7px 20px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+}
+
+.main-menu .sub-menu li{
+    display: block;
+}
+
+.main-menu .sub-menu li a{
+    display: block;
+    color: #000;
+    margin-right: 0;
+    padding: 8px 20px;
+}
+
+.main-menu .sub-menu li a:hover{
+    color: #f51167;
+}
+
+
+/* Slider */
+#slider{
+    margin-bottom: 100px;
+}
+
+
+/* Latest Product */
+.box{
+    background: #ffffff;
+    margin: 0 0 30px;
+    border: solid 1px #e6e6e6;
+    box-sizing: border-box;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
+}
+
+#latest h2{
+    font-size: 36px;
+    font-weight: 400;
+    color: #4fbfa8;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#content{
+    padding-left: 25px;
+}
+
+#content .single{
+    width: 290px;
+}
+
+@media(max-width: 992px){
+    .single{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+#content .row .product{
+    background: #ffffff;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#content .product .text{
+    padding: 10px 10px 0px;
+
+}
+
+.price{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#content .product .text .button{
+    text-align: center;
+    clear: both;
+}
+
+#content .product .text .button .btn{
+    margin-bottom: 10px;
+}
+
+#content .product .text h3{
+    text-align: center;
+    font-size: 20px;
+}
+
+#content .product .text h3 a{
+    color: rgb(85, 85, 85);
+}
+
+
+/* Footer */
+#footer{
+    background: #e6e6e6;
+    padding: 20px 0;
+    border-top: 3px solid #ED145B;
+}
+#footer a{
+    color: #999999;
+    padding: 0;
+    text-decoration: none;
+}
+
+#footer a:hover{
+    color: #666666;
+}
+
+#footer ul{
+    list-style: none;
+    padding-left: 0px
+}
+
+#footer .social{
+    text-align: left;
+}
+
+#footer .social a{
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #555555;
+    text-decoration: none;
+}
+
+#footer .social a:hover{
+    color: #dedede;
+    background: #777777;
+}
+
+/* Copy Right */
+#copyright{
+    background: #333333;
+    color: #cccccc;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+#copyright p{
+    margin: 0px;
+}
+
+
+/* Breadcrumb */
+.breadcrumb{
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    background: #ffffff;
+    border-radius: 0px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+}
+
+.breadcrumb > li + li:before{
+    content: ">\00a0";
+    color: #cccccc;
+}
+
+@media(max-width: 992px){
+    .breadcrumb{
+        padding: 8px 0;
+        text-align: center;
+    }
+}
+
+
+/* Purfume Categories and Skincare Categories */
+#content .sidebar-menu{
+    box-sizing: border-box;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+    margin-bottom: 20px;
+}
+
+#content .card .category-menu{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#content .card .category-menu li a{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#content .card h5{
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+/* Shop Product */
+
+
+/* Details */
+#content #productMain{
+    margin-bottom: 30px;
+}
+
+#content #productMain .price{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#content #mainImage{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+#content #thumbs a{
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border: 2px solid transparent;
+}
+
+#content .headline{
+    height: 305px;
+}
+
+
+/* Cart */
+#content #cart .table tbody tr td img{
+    width: 50px;
+}
+
+#content #cart .table tbody tr td input{
+    width: 40px;
+    text-align: right;
+}
+
+#content #cart .table tbody tr td{
+    vertical-align: middle;
+}
+
+#content #cart .table tfoot{
+    font-size: 18px;
+}
+
+.box .box-footer{
+    background-color: #f7f7f7;
+    margin: 50px -20px 40px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+.box .box-footer:before,
+.box .box-footer:after{
+    content:"";
+    display: table;
+}
+
+.box .box-footer:after{
+    clear: both;
+}
+
+.box .box-header{
+    background-color: #f7f7f7;
+    margin: 30px -20px 20px;
+    padding: 20px;
+    border-top: 1px solid #eeeeee;
+}
+
+#content #order-summary table{
+    margin-top: 20px;
+}
+
+#content #order-summary table td{
+    color: #999999;
+}
+
+#content #order-summary table tr.total td,
+#content #order-summary table tr.total th{
+    font-size: 18px;
+    color: #555555;
+    font-weight: 700;
+}
+
+
+/* For Firefox only */
+@-moz-document url-prefix(){
+    .form-height-custom{
+        height: auto;
+    }
+}
+

@@ -1,0 +1,111 @@
+/*
+Template Name     : M-Dev Store
+Author Name       : MrGhie
+Author Email      : mugianto1nd@gmail.com
+Theme URI         : www.m-dev-store.com | localhost/m-dev-store
+Theme Ver         : 1.1
+*/
+
+/* General Styles */
+
+body{
+    margin-top: 100px;
+}
+
+#wrapper{
+    padding-left: 0px;
+}
+
+#page-wrapper{
+    width: 100%;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+@media (min-width: 768px){
+    body{
+        margin-top: 50px;
+}
+
+    #wrapper{
+        padding-left: 255px;
+}
+
+    #page-wrapper{
+        padding: 10px;
+}
+}
+
+/*  Top Navigation Styles  */
+
+.top-nav{
+    padding: 0 15px;
+}
+
+.top-nav>li{
+    float: left;
+    display: inline-block;
+}
+
+.top-nav>li>a{
+    color: #999999;
+    line-height: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.top-nav>li>a:hover, .top-nav>li>a:focus{
+    color: #000000;
+}
+
+/*  Sidebar Styles  */
+
+@media (min-width: 768px){
+    .side-nav{
+        position: fixed;
+        padding: 15px;
+        margin-left: -15px;
+        top: 51px;
+        bottom: 0;
+        width: 255px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        padding-bottom: 40px;
+        border-radius: 15px;
+        border-top: 1px solid #3e41f0;
+        border-right: 1px solid #3e41f0;
+    }
+    .side-nav>li>a{
+        width: 255px;
+        margin-top: 10px;
+    }
+    .side-nav>li>a:hover, .side-nav>li>a:focus{
+        outline: none;
+        background-color: #e7f2e6 !important;
+    }
+}
+
+
+
+.side-nav>li>ul{
+    padding: 0;
+}
+
+.side-nav>li>ul>li>a{
+    padding: 10px 15px 10px 38px;
+    text-decoration: none;
+    color: #999999;
+    display: block;
+}
+
+.side-nav>li>ul>li>a:hover{
+    color: #000000;
+}
+
+
+
+
+
+
+
